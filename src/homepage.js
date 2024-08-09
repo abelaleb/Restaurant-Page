@@ -27,8 +27,7 @@ Whether you're celebrating a special occasion or simply seeking a luxurious esca
   image.style.minWidth = "80vh";
 
   const description = document.createElement("p");
-  description.textContent = `
-2014 Forest Drive, Fayetteville, North Carolina.`;
+  description.textContent = `Av. Gustave Eiffel, 75007 Paris, France`;
   description.style.margin = ".5rem"
 
 
