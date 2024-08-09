@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+:root {
+  --clr-1: #ffffff;
+  --clr-2: #d7eefa;
+  --clr-3: #91a0a8;
+  --clr-4: #6e7980;
+  --clr-5: #afc2cc;
+  --clr-6: #4b5257;
+  --border-radius: 8px;
+  --spacing-xs: 5px;
+  --spacing-sm: 10px;
+  --spacing-md: 15px;
+  --spacing-lg: 20px;
+  --spacing-xl: 40px;
+  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@font-face {
+  font-family: "Title";
+  src: url("./Fonts/HermeneusOne-Regular.otf");
+}
+@font-face {
+  font-family: "body";
+  src: url("./Fonts/lemon.ttf");
+}
+body {
+  font-family: "body";
+
+  display: grid;
+  flex-direction: column;
+}
+nav {
+  font-family: "Title";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+  gap: 3rem;
+  height: 40px;
+  background-color: var(--clr-1);
+}
+img {
+  width: 50%;
+}
+#content {
+  min-height: 100vh;
+  color: var(--clr-6);
+}
+button {
+  background-color: var(--clr-2);
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: var(--clr-6);
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1.3rem;
+  height: 2rem;
+  padding: 0 25px;
+  transition: all 200ms;
+}
+button:hover {
+  background-color: var(--clr-5);
+  transform: scale(1.05);
+}
+
+.footer {
+  font-size: 1.1rem;
+  background-color: var(--clr-2);
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: .3rem;
+}
+
+.fa-github {
+  font-size: 24px;
+  color: var(--clr-6);
+  transition: transform 0.3s ease-in-out;
+}
+
+.fa-github:hover {
+  transform: rotate(360deg) scale(1.2);
+}
