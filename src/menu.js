@@ -1,8 +1,21 @@
+import AlmasCaviarImg from "./images/Almas caviar.jpg";
+import backgroundPatternImg from "./images/Backgroundpattern.png";
+import ChocolateSouffléImg from "./images/Chocolate Soufflé.jpg";
+import ConfitdeCanardImg from "./images/Confit de Canard.jpg";
+import CrèmeBrûléeImg from "./images/Crème Brûlée.jpg";
+import EscargotBourguignonneImg from "./images/Escargot Bourguignonne.jpg";
+import GreenBeansAlmondineImg from "./images/Green Beans Almondine.jpg";
+import linguiniImg from "./images/linguini.jpeg";
+import PommesFritesImg from "./images/Pommes Frites.jpg";
+import RatatouilleGratinImg from "./images/Ratatouille Gratin.jpg";
+import RatatouilleImg from "./images/Ratatouille.jpg";
+import RoastedLambwithHerbsdeProvenceImg from "./images/Roasted Lamb with Herbs de Provence.jpg";
+import TarteTatinImg from "./images/Tarte Tatin.jpg";
 export default function createMenu() {
   const content = document.getElementById("content");
   content.style.textAlign = "center";
-  content.style.backgroundImage = "url('../src/images/Backgroundpattern.png')";
-  content.style.backgroundImage = "cover"
+  content.style.backgroundImage = backgroundPatternImg;
+  content.style.backgroundImage = "cover";
 
   const heading = document.createElement("h1");
   heading.textContent = "Remy's: A Culinary Adventure";
@@ -36,83 +49,83 @@ export default function createMenu() {
       name: "Remy's Ratatouille",
       description:
         "A classic Provençal dish featuring a medley of roasted summer vegetables, slow-cooked to perfection.",
-      image: "../src/images/Ratatouille.jpg",
+      image: RatatouilleImg,
       section: "appetizers",
     },
     {
       name: "Linguini with White Truffles",
       description:
         "Delicate pasta tossed with a rich truffle cream sauce, a nod to Remy's love for fine dining.",
-      image: "../src/images/linguini.jpeg",
+      image: linguiniImg,
       section: "appetizers",
     },
     {
       name: "Escargot Bourguignonne",
       description:
         "A French classic, these tender snails are bathed in a garlic and herb butter sauce.",
-      image: "../src/images/Escargot Bourguignonne.jpg",
+      image: EscargotBourguignonneImg,
       section: "appetizers",
     },
     {
       name: "Le Chef's Surprise",
       description:
         "A daily changing special inspired by the freshest ingredients, showcasing the chef's creativity.",
-      image: "../src/images/Almas caviar.jpg",
+      image: AlmasCaviarImg,
       section: "main-courses",
     },
     {
       name: "Confit de Canard",
       description:
         "Crispy duck leg served with a sweet and tangy orange sauce, a nod to French culinary tradition.",
-      image: "../src/images/Confit de Canard.jpg",
+      image: ConfitdeCanardImg,
       section: "main-courses",
     },
     {
       name: "Roasted Lamb with Herbs de Provence",
       description:
         "Tender lamb slow-roasted with aromatic herbs, a true taste of the French countryside.",
-      image: "../src/images/Roasted Lamb with Herbs de Provence.jpg",
+      image: RoastedLambwithHerbsdeProvenceImg,
       section: "main-courses",
     },
     {
       name: "Pommes Frites",
       description:
         "Classic French fries, crispy on the outside, fluffy on the inside.",
-      image: "../src/images/Pommes Frites.jpg",
+      image: PommesFritesImg,
       section: "sides",
     },
     {
       name: "Ratatouille Gratin",
       description:
         "A hearty baked version of the classic dish, topped with a golden cheese crust.",
-      image: "../src/images/Ratatouille Gratin.jpg",
+      image: RatatouilleGratinImg,
       section: "sides",
     },
     {
       name: "Green Beans Almondine",
       description:
         "A simple yet elegant side dish, featuring fresh green beans with toasted almonds.",
-      image: "../src/images/Green Beans Almondine.jpg",
+      image: GreenBeansAlmondineImg,
       section: "sides",
     },
     {
       name: "Tarte Tatin",
       description:
         "A caramelized upside-down apple tart, a French dessert classic.",
-      image: "../src/images/Tarte Tatin.jpg",
+      image: TarteTatinImg,
       section: "desserts",
     },
     {
       name: "Crème Brûlée",
       description: "A rich custard topped with a caramelized sugar crust.",
-      image: "../src/images//Crème Brûlée.jpg",
+      image: CrèmeBrûléeImg,
       section: "desserts",
     },
     {
       name: "Chocolate Soufflé",
       description:
         "A decadent dessert, light and airy with a molten chocolate center.",
-      image: "../src/images/Chocolate Soufflé.jpg",
+      image: ChocolateSouffléImg,
       section: "desserts",
     },
   ];

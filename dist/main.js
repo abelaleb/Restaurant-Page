@@ -156,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenu)\n/* harmony export */ });\nfunction createMenu() {\n  const content = document.getElementById(\"content\");\n  content.style.textAlign = \"center\";\n  content.style.backgroundImage = \"url('../src/images/Backgroundpattern.png')\";\n  content.style.backgroundImage = \"cover\"\n\n  const heading = document.createElement(\"h1\");\n  heading.textContent = \"Remy's: A Culinary Adventure\";\n  heading.style.marginTop = \"20px\";\n  content.appendChild(heading);\n\n  const menuContainer = document.createElement(\"div\");\n  menuContainer.classList.add(\"menu-container\");\n  content.appendChild(menuContainer);\n\n  const sections = [\n    { id: \"appetizers\", title: \"Appetizers\" },\n    { id: \"main-courses\", title: \"Main Courses\" },\n    { id: \"sides\", title: \"Sides\" },\n    { id: \"desserts\", title: \"Desserts\" },\n  ];\n\n  sections.forEach((section) => {\n    const sectionTitle = document.createElement(\"h2\");\n    sectionTitle.textContent = section.title;\n    sectionTitle.style.fontFamily = \"Georgia, serif\";\n    sectionTitle.style.marginTop = \"30px\";\n    menuContainer.appendChild(sectionTitle);\n\n    const sectionDiv = document.createElement(\"div\");\n    sectionDiv.id = section.id;\n    menuContainer.appendChild(sectionDiv);\n  });\n  const menuItems = [\n    {\n      name: \"Remy's Ratatouille\",\n      description:\n        \"A classic Provençal dish featuring a medley of roasted summer vegetables, slow-cooked to perfection.\",\n      image: \"../src/images/Ratatouille.jpg\",\n      section: \"appetizers\",\n    },\n    {\n      name: \"Linguini with White Truffles\",\n      description:\n        \"Delicate pasta tossed with a rich truffle cream sauce, a nod to Remy's love for fine dining.\",\n      image: \"../src/images/linguini.jpeg\",\n      section: \"appetizers\",\n    },\n    {\n      name: \"Escargot Bourguignonne\",\n      description:\n        \"A French classic, these tender snails are bathed in a garlic and herb butter sauce.\",\n      image: \"../src/images/Escargot Bourguignonne.jpg\",\n      section: \"appetizers\",\n    },\n    {\n      name: \"Le Chef's Surprise\",\n      description:\n        \"A daily changing special inspired by the freshest ingredients, showcasing the chef's creativity.\",\n      image: \"../src/images/Almas caviar.jpg\",\n      section: \"main-courses\",\n    },\n    {\n      name: \"Confit de Canard\",\n      description:\n        \"Crispy duck leg served with a sweet and tangy orange sauce, a nod to French culinary tradition.\",\n      image: \"../src/images/Confit de Canard.jpg\",\n      section: \"main-courses\",\n    },\n    {\n      name: \"Roasted Lamb with Herbs de Provence\",\n      description:\n        \"Tender lamb slow-roasted with aromatic herbs, a true taste of the French countryside.\",\n      image: \"../src/images/Roasted Lamb with Herbs de Provence.jpg\",\n      section: \"main-courses\",\n    },\n    {\n      name: \"Pommes Frites\",\n      description:\n        \"Classic French fries, crispy on the outside, fluffy on the inside.\",\n      image: \"../src/images/Pommes Frites.jpg\",\n      section: \"sides\",\n    },\n    {\n      name: \"Ratatouille Gratin\",\n      description:\n        \"A hearty baked version of the classic dish, topped with a golden cheese crust.\",\n      image: \"../src/images/Ratatouille Gratin.jpg\",\n      section: \"sides\",\n    },\n    {\n      name: \"Green Beans Almondine\",\n      description:\n        \"A simple yet elegant side dish, featuring fresh green beans with toasted almonds.\",\n      image: \"../src/images/Green Beans Almondine.jpg\",\n      section: \"sides\",\n    },\n    {\n      name: \"Tarte Tatin\",\n      description:\n        \"A caramelized upside-down apple tart, a French dessert classic.\",\n      image: \"../src/images/Tarte Tatin.jpg\",\n      section: \"desserts\",\n    },\n    {\n      name: \"Crème Brûlée\",\n      description: \"A rich custard topped with a caramelized sugar crust.\",\n      image: \"../src/images//Crème Brûlée.jpg\",\n      section: \"desserts\",\n    },\n    {\n      name: \"Chocolate Soufflé\",\n      description:\n        \"A decadent dessert, light and airy with a molten chocolate center.\",\n      image: \"../src/images/Chocolate Soufflé.jpg\",\n      section: \"desserts\",\n    },\n  ];\n  menuItems.forEach((item) => {\n    Menu(item.name, item.description, item.image, item.section);\n  });\n  function Menu(name, description, image, menuSectionId) {\n    const menuItem = document.createElement(\"div\");\n    menuItem.classList.add(\"menu-item\");\n    menuItem.style.marginBottom = \"20px\";\n    menuItem.style.position = \"relative\";\n    menuItem.style.overflow = \"hidden\";\n\n    const imageElement = document.createElement(\"img\");\n    imageElement.src = image;\n    imageElement.alt = name;\n    imageElement.style.width = \"50%\";\n    imageElement.style.height = \"400px\";\n    imageElement.style.objectFit = \"cover\";\n    imageElement.style.borderRadius = \"10px\";\n    imageElement.style.transition = \"transform 0.3s ease-in-out\";\n    menuItem.appendChild(imageElement);\n\n    const descriptionElement = document.createElement(\"div\");\n    descriptionElement.textContent = description;\n    descriptionElement.style.position = \"absolute\";\n    descriptionElement.style.bottom = \"10%\";\n    descriptionElement.style.left = \"25%\";\n    descriptionElement.style.width = \"calc(50% - 20px)\";\n    descriptionElement.style.padding = \"10px\";\n    descriptionElement.style.backgroundColor = \"rgba(0, 0, 0, 0.6)\";\n    descriptionElement.style.color = \"white\";\n    descriptionElement.style.fontSize = \"14px\";\n    descriptionElement.style.borderRadius = \"10px\";\n    descriptionElement.style.opacity = \"0\"; // Start with hidden description\n    descriptionElement.style.transition = \"opacity 0.3s ease-in-out\"; // Transition effect\n\n    menuItem.appendChild(descriptionElement);\n\n    menuItem.addEventListener(\"mouseover\", () => {\n      imageElement.style.transform = \"scale(1.05)\";\n      descriptionElement.style.opacity = \"1\"; // Show description on hover\n    });\n\n    menuItem.addEventListener(\"mouseout\", () => {\n      imageElement.style.transform = \"scale(1)\";\n      descriptionElement.style.opacity = \"0\"; // Hide description when not hovering\n    });\n\n    const menuSection = document.getElementById(menuSectionId);\n    menuSection.appendChild(menuItem);\n  }\n}\n\n\n//# sourceURL=webpack://y/./src/menu.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenu)\n/* harmony export */ });\n/* harmony import */ var _images_Almas_caviar_jpg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./images/Almas caviar.jpg */ \"./src/images/Almas caviar.jpg\");\n/* harmony import */ var _images_Backgroundpattern_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/Backgroundpattern.png */ \"./src/images/Backgroundpattern.png\");\n/* harmony import */ var _images_Chocolate_Souffl_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/Chocolate Soufflé.jpg */ \"./src/images/Chocolate Soufflé.jpg\");\n/* harmony import */ var _images_Confit_de_Canard_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./images/Confit de Canard.jpg */ \"./src/images/Confit de Canard.jpg\");\n/* harmony import */ var _images_Cr_me_Br_l_e_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./images/Crème Brûlée.jpg */ \"./src/images/Crème Brûlée.jpg\");\n/* harmony import */ var _images_Escargot_Bourguignonne_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./images/Escargot Bourguignonne.jpg */ \"./src/images/Escargot Bourguignonne.jpg\");\n/* harmony import */ var _images_Green_Beans_Almondine_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./images/Green Beans Almondine.jpg */ \"./src/images/Green Beans Almondine.jpg\");\n/* harmony import */ var _images_linguini_jpeg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./images/linguini.jpeg */ \"./src/images/linguini.jpeg\");\n/* harmony import */ var _images_Pommes_Frites_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./images/Pommes Frites.jpg */ \"./src/images/Pommes Frites.jpg\");\n/* harmony import */ var _images_Ratatouille_Gratin_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./images/Ratatouille Gratin.jpg */ \"./src/images/Ratatouille Gratin.jpg\");\n/* harmony import */ var _images_Ratatouille_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./images/Ratatouille.jpg */ \"./src/images/Ratatouille.jpg\");\n/* harmony import */ var _images_Roasted_Lamb_with_Herbs_de_Provence_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./images/Roasted Lamb with Herbs de Provence.jpg */ \"./src/images/Roasted Lamb with Herbs de Provence.jpg\");\n/* harmony import */ var _images_Tarte_Tatin_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./images/Tarte Tatin.jpg */ \"./src/images/Tarte Tatin.jpg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\nfunction createMenu() {\n  const content = document.getElementById(\"content\");\n  content.style.textAlign = \"center\";\n  content.style.backgroundImage = _images_Backgroundpattern_png__WEBPACK_IMPORTED_MODULE_1__;\n  content.style.backgroundImage = \"cover\";\n\n  const heading = document.createElement(\"h1\");\n  heading.textContent = \"Remy's: A Culinary Adventure\";\n  heading.style.marginTop = \"20px\";\n  content.appendChild(heading);\n\n  const menuContainer = document.createElement(\"div\");\n  menuContainer.classList.add(\"menu-container\");\n  content.appendChild(menuContainer);\n\n  const sections = [\n    { id: \"appetizers\", title: \"Appetizers\" },\n    { id: \"main-courses\", title: \"Main Courses\" },\n    { id: \"sides\", title: \"Sides\" },\n    { id: \"desserts\", title: \"Desserts\" },\n  ];\n\n  sections.forEach((section) => {\n    const sectionTitle = document.createElement(\"h2\");\n    sectionTitle.textContent = section.title;\n    sectionTitle.style.fontFamily = \"Georgia, serif\";\n    sectionTitle.style.marginTop = \"30px\";\n    menuContainer.appendChild(sectionTitle);\n\n    const sectionDiv = document.createElement(\"div\");\n    sectionDiv.id = section.id;\n    menuContainer.appendChild(sectionDiv);\n  });\n  const menuItems = [\n    {\n      name: \"Remy's Ratatouille\",\n      description:\n        \"A classic Provençal dish featuring a medley of roasted summer vegetables, slow-cooked to perfection.\",\n      image: _images_Ratatouille_jpg__WEBPACK_IMPORTED_MODULE_10__,\n      section: \"appetizers\",\n    },\n    {\n      name: \"Linguini with White Truffles\",\n      description:\n        \"Delicate pasta tossed with a rich truffle cream sauce, a nod to Remy's love for fine dining.\",\n      image: _images_linguini_jpeg__WEBPACK_IMPORTED_MODULE_7__,\n      section: \"appetizers\",\n    },\n    {\n      name: \"Escargot Bourguignonne\",\n      description:\n        \"A French classic, these tender snails are bathed in a garlic and herb butter sauce.\",\n      image: _images_Escargot_Bourguignonne_jpg__WEBPACK_IMPORTED_MODULE_5__,\n      section: \"appetizers\",\n    },\n    {\n      name: \"Le Chef's Surprise\",\n      description:\n        \"A daily changing special inspired by the freshest ingredients, showcasing the chef's creativity.\",\n      image: _images_Almas_caviar_jpg__WEBPACK_IMPORTED_MODULE_0__,\n      section: \"main-courses\",\n    },\n    {\n      name: \"Confit de Canard\",\n      description:\n        \"Crispy duck leg served with a sweet and tangy orange sauce, a nod to French culinary tradition.\",\n      image: _images_Confit_de_Canard_jpg__WEBPACK_IMPORTED_MODULE_3__,\n      section: \"main-courses\",\n    },\n    {\n      name: \"Roasted Lamb with Herbs de Provence\",\n      description:\n        \"Tender lamb slow-roasted with aromatic herbs, a true taste of the French countryside.\",\n      image: _images_Roasted_Lamb_with_Herbs_de_Provence_jpg__WEBPACK_IMPORTED_MODULE_11__,\n      section: \"main-courses\",\n    },\n    {\n      name: \"Pommes Frites\",\n      description:\n        \"Classic French fries, crispy on the outside, fluffy on the inside.\",\n      image: _images_Pommes_Frites_jpg__WEBPACK_IMPORTED_MODULE_8__,\n      section: \"sides\",\n    },\n    {\n      name: \"Ratatouille Gratin\",\n      description:\n        \"A hearty baked version of the classic dish, topped with a golden cheese crust.\",\n      image: _images_Ratatouille_Gratin_jpg__WEBPACK_IMPORTED_MODULE_9__,\n      section: \"sides\",\n    },\n    {\n      name: \"Green Beans Almondine\",\n      description:\n        \"A simple yet elegant side dish, featuring fresh green beans with toasted almonds.\",\n      image: _images_Green_Beans_Almondine_jpg__WEBPACK_IMPORTED_MODULE_6__,\n      section: \"sides\",\n    },\n    {\n      name: \"Tarte Tatin\",\n      description:\n        \"A caramelized upside-down apple tart, a French dessert classic.\",\n      image: _images_Tarte_Tatin_jpg__WEBPACK_IMPORTED_MODULE_12__,\n      section: \"desserts\",\n    },\n    {\n      name: \"Crème Brûlée\",\n      description: \"A rich custard topped with a caramelized sugar crust.\",\n      image: _images_Cr_me_Br_l_e_jpg__WEBPACK_IMPORTED_MODULE_4__,\n      section: \"desserts\",\n    },\n    {\n      name: \"Chocolate Soufflé\",\n      description:\n        \"A decadent dessert, light and airy with a molten chocolate center.\",\n      image: _images_Chocolate_Souffl_jpg__WEBPACK_IMPORTED_MODULE_2__,\n      section: \"desserts\",\n    },\n  ];\n  menuItems.forEach((item) => {\n    Menu(item.name, item.description, item.image, item.section);\n  });\n  function Menu(name, description, image, menuSectionId) {\n    const menuItem = document.createElement(\"div\");\n    menuItem.classList.add(\"menu-item\");\n    menuItem.style.marginBottom = \"20px\";\n    menuItem.style.position = \"relative\";\n    menuItem.style.overflow = \"hidden\";\n\n    const imageElement = document.createElement(\"img\");\n    imageElement.src = image;\n    imageElement.alt = name;\n    imageElement.style.width = \"50%\";\n    imageElement.style.height = \"400px\";\n    imageElement.style.objectFit = \"cover\";\n    imageElement.style.borderRadius = \"10px\";\n    imageElement.style.transition = \"transform 0.3s ease-in-out\";\n    menuItem.appendChild(imageElement);\n\n    const descriptionElement = document.createElement(\"div\");\n    descriptionElement.textContent = description;\n    descriptionElement.style.position = \"absolute\";\n    descriptionElement.style.bottom = \"10%\";\n    descriptionElement.style.left = \"25%\";\n    descriptionElement.style.width = \"calc(50% - 20px)\";\n    descriptionElement.style.padding = \"10px\";\n    descriptionElement.style.backgroundColor = \"rgba(0, 0, 0, 0.6)\";\n    descriptionElement.style.color = \"white\";\n    descriptionElement.style.fontSize = \"14px\";\n    descriptionElement.style.borderRadius = \"10px\";\n    descriptionElement.style.opacity = \"0\"; // Start with hidden description\n    descriptionElement.style.transition = \"opacity 0.3s ease-in-out\"; // Transition effect\n\n    menuItem.appendChild(descriptionElement);\n\n    menuItem.addEventListener(\"mouseover\", () => {\n      imageElement.style.transform = \"scale(1.05)\";\n      descriptionElement.style.opacity = \"1\"; // Show description on hover\n    });\n\n    menuItem.addEventListener(\"mouseout\", () => {\n      imageElement.style.transform = \"scale(1)\";\n      descriptionElement.style.opacity = \"0\"; // Hide description when not hovering\n    });\n\n    const menuSection = document.getElementById(menuSectionId);\n    menuSection.appendChild(menuItem);\n  }\n}\n\n\n//# sourceURL=webpack://y/./src/menu.js?");
 
 /***/ }),
 
@@ -177,6 +177,136 @@ eval("module.exports = __webpack_require__.p + \"02666af38bab89092fbc.otf\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 eval("module.exports = __webpack_require__.p + \"388ce7e72e1277b306d5.ttf\";\n\n//# sourceURL=webpack://y/./src/Fonts/Lemon.ttf?");
+
+/***/ }),
+
+/***/ "./src/images/Almas caviar.jpg":
+/*!*************************************!*\
+  !*** ./src/images/Almas caviar.jpg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"ac4d61b3bd0c3dbc5351.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Almas_caviar.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Backgroundpattern.png":
+/*!******************************************!*\
+  !*** ./src/images/Backgroundpattern.png ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"7d3728e7615c0728ad3a.png\";\n\n//# sourceURL=webpack://y/./src/images/Backgroundpattern.png?");
+
+/***/ }),
+
+/***/ "./src/images/Chocolate Soufflé.jpg":
+/*!******************************************!*\
+  !*** ./src/images/Chocolate Soufflé.jpg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"f93a39792897de1b8033.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Chocolate_Souffl%C3%A9.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Confit de Canard.jpg":
+/*!*****************************************!*\
+  !*** ./src/images/Confit de Canard.jpg ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"903249b43da1beaa0ea3.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Confit_de_Canard.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Crème Brûlée.jpg":
+/*!*************************************!*\
+  !*** ./src/images/Crème Brûlée.jpg ***!
+  \*************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"3130f22dfd561dc4791e.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Cr%C3%A8me_Br%C3%BBl%C3%A9e.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Escargot Bourguignonne.jpg":
+/*!***********************************************!*\
+  !*** ./src/images/Escargot Bourguignonne.jpg ***!
+  \***********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"87af058e7edc46a87870.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Escargot_Bourguignonne.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Green Beans Almondine.jpg":
+/*!**********************************************!*\
+  !*** ./src/images/Green Beans Almondine.jpg ***!
+  \**********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6345e64c59414d171d23.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Green_Beans_Almondine.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Pommes Frites.jpg":
+/*!**************************************!*\
+  !*** ./src/images/Pommes Frites.jpg ***!
+  \**************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"6699eda1885b05c5ff28.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Pommes_Frites.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Ratatouille Gratin.jpg":
+/*!*******************************************!*\
+  !*** ./src/images/Ratatouille Gratin.jpg ***!
+  \*******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"990266a78f591f7c4459.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Ratatouille_Gratin.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Ratatouille.jpg":
+/*!************************************!*\
+  !*** ./src/images/Ratatouille.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"106ab8dc159f07b638c7.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Ratatouille.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Roasted Lamb with Herbs de Provence.jpg":
+/*!************************************************************!*\
+  !*** ./src/images/Roasted Lamb with Herbs de Provence.jpg ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"cca5ba3bb6696d25209a.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Roasted_Lamb_with_Herbs_de_Provence.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/Tarte Tatin.jpg":
+/*!************************************!*\
+  !*** ./src/images/Tarte Tatin.jpg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"12fe823e1757c5383288.jpg\";\n\n//# sourceURL=webpack://y/./src/images/Tarte_Tatin.jpg?");
+
+/***/ }),
+
+/***/ "./src/images/linguini.jpeg":
+/*!**********************************!*\
+  !*** ./src/images/linguini.jpeg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"818967aec46103fd7474.jpeg\";\n\n//# sourceURL=webpack://y/./src/images/linguini.jpeg?");
 
 /***/ })
 
