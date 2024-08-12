@@ -19,14 +19,14 @@
   --spacing-xl: 40px;
   --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-/* @font-face {
+@font-face {
   font-family: "Title";
-  src: url("../Fonts/HermeneusOne-Regular.otf");
+  src: url("./Fonts/HermeneusOne-Regular.otf");
 }
 @font-face {
   font-family: "body";
-  src: url("../Fonts/19919.ttf");
-} */
+  src: url("./Fonts/Lemon.ttf");
+}
 body {
   font-family: "body";
 
