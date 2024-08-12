@@ -29,7 +29,6 @@
 }
 body {
   font-family: "body";
-
   display: grid;
   flex-direction: column;
 }
@@ -38,7 +37,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   gap: 3rem;
   height: 40px;
   background-color: var(--clr-1);
@@ -50,6 +49,8 @@ img {
   min-height: 100vh;
   color: var(--clr-6);
 }
+p {
+}
 button {
   background-color: var(--clr-2);
   border-width: 0;
@@ -57,7 +58,7 @@ button {
   color: var(--clr-6);
   cursor: pointer;
   display: inline-block;
-  font-family: Arial, sans-serif;
+  font-family: "body";
   font-size: 1.3rem;
   height: 2rem;
   padding: 0 25px;
@@ -78,7 +79,7 @@ button:hover {
   justify-content: center;
   gap: 10px;
   width: 100%;
-  padding: .3rem;
+  padding: 0.3rem;
 }
 
 .fa-github {

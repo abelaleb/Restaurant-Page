@@ -1,10 +1,10 @@
-import backgroundPatternImg from "./images/Backgroundpattern.png"
-import RatatouilleImg from './images/Ratatouille.jpg';
+import backgroundPatternImg from "./images/Backgroundpattern.png";
+import RatatouilleImg from "./images/Ratatouille.jpg";
 export default function createHomepage() {
   const content = document.getElementById("content");
   content.style.fontSize = "1.25rem";
   content.style.textAlign = "center";
-  content.style.backgroundImage = backgroundPatternImg;
+  content.style.backgroundImage = `url(${backgroundPatternImg})`;
 
   const headline = document.createElement("h1");
   headline.textContent = "Remy's";
@@ -21,7 +21,7 @@ Whether you're celebrating a special occasion or simply seeking a luxurious esca
   main.style.gap = "1rem";
 
   const image = document.createElement("div");
-  image.style.backgroundImage = RatatouilleImg;
+  image.style.backgroundImage = `url(${RatatouilleImg})`;
   image.style.backgroundSize = "cover";
   image.style.backgroundPosition = "end";
   image.style.backgroundRepeat = "no-repeat";
@@ -30,8 +30,7 @@ Whether you're celebrating a special occasion or simply seeking a luxurious esca
 
   const description = document.createElement("p");
   description.textContent = `Av. Gustave Eiffel, 75007 Paris, France`;
-  description.style.margin = ".5rem"
-
+  description.style.margin = ".5rem";
 
   main.append(image, description);
 

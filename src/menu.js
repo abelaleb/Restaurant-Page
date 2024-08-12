@@ -15,7 +15,7 @@ import TarteTatinImg from "./images/Tarte Tatin.jpg";
 export default function createMenu() {
   const content = document.getElementById("content");
   content.style.textAlign = "center";
-  content.style.backgroundImage = backgroundPatternImg;
+  content.style.backgroundImage = `url(${backgroundPatternImg})`;
   content.style.backgroundImage = "cover";
 
   const heading = document.createElement("h1");
@@ -37,7 +37,6 @@ export default function createMenu() {
   sections.forEach((section) => {
     const sectionTitle = document.createElement("h2");
     sectionTitle.textContent = section.title;
-    sectionTitle.style.fontFamily = "Georgia, serif";
     sectionTitle.style.marginTop = "30px";
     menuContainer.appendChild(sectionTitle);
 

@@ -1,6 +1,7 @@
+import backgroundPatternImg from "./images/Backgroundpattern.png"
 export default function createContact() {
   const content = document.getElementById("content");
-  content.style.backgroundImage = "url('../src/images/Backgroundpattern.png')";
+  content.style.backgroundImage = `url(${backgroundPatternImg})`;
   content.style.textAlign = "center";
   content.style.fontSize = "1.3rem";
   content.style.padding = "2rem";
@@ -32,14 +33,7 @@ export default function createContact() {
   philosophyDesc.textContent = `We believe great food brings people together. Cooking is an art, and we aim to create memorable experiences with our inventive French dishes.`;
   content.appendChild(philosophyDesc);
 
-  const experienceTitle = document.createElement("h2");
-  experienceTitle.textContent = "The Experience";
-  content.appendChild(experienceTitle);
-
-  const experienceDesc = document.createElement("p");
-  experienceDesc.textContent = `Dining at Remy's is an adventure. Enjoy bold flavors and stunning presentations in a setting where each dish tells a story.`;
-  content.appendChild(experienceDesc);
-
+ 
   const joinUsTitle = document.createElement("h2");
   joinUsTitle.textContent = "Join Us";
   content.appendChild(joinUsTitle);
