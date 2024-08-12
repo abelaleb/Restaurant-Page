@@ -1,8 +1,10 @@
+import backgroundPatternImg from "./images/Backgroundpattern.png"
+import RatatouilleImg from './images/Ratatouille.jpg';
 export default function createHomepage() {
   const content = document.getElementById("content");
   content.style.fontSize = "1.25rem";
   content.style.textAlign = "center";
-  content.style.backgroundImage = 'url("../src/images/Backgroundpattern.png")';
+  content.style.backgroundImage = backgroundPatternImg;
 
   const headline = document.createElement("h1");
   headline.textContent = "Remy's";
@@ -19,7 +21,7 @@ Whether you're celebrating a special occasion or simply seeking a luxurious esca
   main.style.gap = "1rem";
 
   const image = document.createElement("div");
-  image.style.backgroundImage = 'url("../src/images/Ratatouille.jpg")';
+  image.style.backgroundImage = RatatouilleImg;
   image.style.backgroundSize = "cover";
   image.style.backgroundPosition = "end";
   image.style.backgroundRepeat = "no-repeat";

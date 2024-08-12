@@ -11,6 +11,7 @@ import RatatouilleGratinImg from "./images/Ratatouille Gratin.jpg";
 import RatatouilleImg from "./images/Ratatouille.jpg";
 import RoastedLambwithHerbsdeProvenceImg from "./images/Roasted Lamb with Herbs de Provence.jpg";
 import TarteTatinImg from "./images/Tarte Tatin.jpg";
+
 export default function createMenu() {
   const content = document.getElementById("content");
   content.style.textAlign = "center";
