@@ -16,7 +16,7 @@
   \*************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n// Imports\n\n\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  line-height: 1.5;\n}\n:root {\n  --clr-1: #ffffff;\n  --clr-2: #d7eefa;\n  --clr-3: #91a0a8;\n  --clr-4: #6e7980;\n  --clr-5: #afc2cc;\n  --clr-6: #4b5257;\n  --border-radius: 8px;\n  --spacing-xs: 5px;\n  --spacing-sm: 10px;\n  --spacing-md: 15px;\n  --spacing-lg: 20px;\n  --spacing-xl: 40px;\n  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;\n}\n/* @font-face {\n  font-family: \"Title\";\n  src: url(\"../Fonts/HermeneusOne-Regular.otf\");\n}\n@font-face {\n  font-family: \"body\";\n  src: url(\"../Fonts/19919.ttf\");\n} */\nbody {\n  font-family: \"body\";\n\n  display: grid;\n  flex-direction: column;\n}\nnav {\n  font-family: \"Title\";\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: .5rem;\n  gap: 3rem;\n  height: 40px;\n  background-color: var(--clr-1);\n}\nimg {\n  width: 50%;\n}\n#content {\n  min-height: 100vh;\n  color: var(--clr-6);\n}\nbutton {\n  background-color: var(--clr-2);\n  border-width: 0;\n  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;\n  color: var(--clr-6);\n  cursor: pointer;\n  display: inline-block;\n  font-family: Arial, sans-serif;\n  font-size: 1.3rem;\n  height: 2rem;\n  padding: 0 25px;\n  transition: all 200ms;\n}\nbutton:hover {\n  background-color: var(--clr-5);\n  transform: scale(1.05);\n}\n\n.footer {\n  font-size: 1.1rem;\n  background-color: var(--clr-2);\n  bottom: 0;\n  left: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  width: 100%;\n  padding: .3rem;\n}\n\n.fa-github {\n  font-size: 24px;\n  color: var(--clr-6);\n  transition: transform 0.3s ease-in-out;\n}\n\n.fa-github:hover {\n  transform: rotate(360deg) scale(1.2);\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://y/./src/style.css?./node_modules/css-loader/dist/cjs.js");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/noSourceMaps.js */ \"./node_modules/css-loader/dist/runtime/noSourceMaps.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ \"./node_modules/css-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);\n// Imports\n\n\n\nvar ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./Fonts/HermeneusOne-Regular.otf */ \"./src/Fonts/HermeneusOne-Regular.otf\"), __webpack_require__.b);\nvar ___CSS_LOADER_URL_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./Fonts/Lemon.ttf */ \"./src/Fonts/Lemon.ttf\"), __webpack_require__.b);\nvar ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));\nvar ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);\nvar ___CSS_LOADER_URL_REPLACEMENT_1___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_1___);\n// Module\n___CSS_LOADER_EXPORT___.push([module.id, `* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  line-height: 1.5;\n}\n:root {\n  --clr-1: #ffffff;\n  --clr-2: #d7eefa;\n  --clr-3: #91a0a8;\n  --clr-4: #6e7980;\n  --clr-5: #afc2cc;\n  --clr-6: #4b5257;\n  --border-radius: 8px;\n  --spacing-xs: 5px;\n  --spacing-sm: 10px;\n  --spacing-md: 15px;\n  --spacing-lg: 20px;\n  --spacing-xl: 40px;\n  --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;\n}\n@font-face {\n  font-family: \"Title\";\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_0___});\n}\n@font-face {\n  font-family: \"body\";\n  src: url(${___CSS_LOADER_URL_REPLACEMENT_1___});\n}\nbody {\n  font-family: \"body\";\n\n  display: grid;\n  flex-direction: column;\n}\nnav {\n  font-family: \"Title\";\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  margin-top: .5rem;\n  gap: 3rem;\n  height: 40px;\n  background-color: var(--clr-1);\n}\nimg {\n  width: 50%;\n}\n#content {\n  min-height: 100vh;\n  color: var(--clr-6);\n}\nbutton {\n  background-color: var(--clr-2);\n  border-width: 0;\n  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;\n  color: var(--clr-6);\n  cursor: pointer;\n  display: inline-block;\n  font-family: Arial, sans-serif;\n  font-size: 1.3rem;\n  height: 2rem;\n  padding: 0 25px;\n  transition: all 200ms;\n}\nbutton:hover {\n  background-color: var(--clr-5);\n  transform: scale(1.05);\n}\n\n.footer {\n  font-size: 1.1rem;\n  background-color: var(--clr-2);\n  bottom: 0;\n  left: 0;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 10px;\n  width: 100%;\n  padding: .3rem;\n}\n\n.fa-github {\n  font-size: 24px;\n  color: var(--clr-6);\n  transition: transform 0.3s ease-in-out;\n}\n\n.fa-github:hover {\n  transform: rotate(360deg) scale(1.2);\n}\n`, \"\"]);\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);\n\n\n//# sourceURL=webpack://y/./src/style.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -27,6 +27,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((module) => {
 
 eval("\n\n/*\n  MIT License http://www.opensource.org/licenses/mit-license.php\n  Author Tobias Koppers @sokra\n*/\nmodule.exports = function (cssWithMappingToString) {\n  var list = [];\n\n  // return the list of modules as css string\n  list.toString = function toString() {\n    return this.map(function (item) {\n      var content = \"\";\n      var needLayer = typeof item[5] !== \"undefined\";\n      if (item[4]) {\n        content += \"@supports (\".concat(item[4], \") {\");\n      }\n      if (item[2]) {\n        content += \"@media \".concat(item[2], \" {\");\n      }\n      if (needLayer) {\n        content += \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\");\n      }\n      content += cssWithMappingToString(item);\n      if (needLayer) {\n        content += \"}\";\n      }\n      if (item[2]) {\n        content += \"}\";\n      }\n      if (item[4]) {\n        content += \"}\";\n      }\n      return content;\n    }).join(\"\");\n  };\n\n  // import a list of modules into the list\n  list.i = function i(modules, media, dedupe, supports, layer) {\n    if (typeof modules === \"string\") {\n      modules = [[null, modules, undefined]];\n    }\n    var alreadyImportedModules = {};\n    if (dedupe) {\n      for (var k = 0; k < this.length; k++) {\n        var id = this[k][0];\n        if (id != null) {\n          alreadyImportedModules[id] = true;\n        }\n      }\n    }\n    for (var _k = 0; _k < modules.length; _k++) {\n      var item = [].concat(modules[_k]);\n      if (dedupe && alreadyImportedModules[item[0]]) {\n        continue;\n      }\n      if (typeof layer !== \"undefined\") {\n        if (typeof item[5] === \"undefined\") {\n          item[5] = layer;\n        } else {\n          item[1] = \"@layer\".concat(item[5].length > 0 ? \" \".concat(item[5]) : \"\", \" {\").concat(item[1], \"}\");\n          item[5] = layer;\n        }\n      }\n      if (media) {\n        if (!item[2]) {\n          item[2] = media;\n        } else {\n          item[1] = \"@media \".concat(item[2], \" {\").concat(item[1], \"}\");\n          item[2] = media;\n        }\n      }\n      if (supports) {\n        if (!item[4]) {\n          item[4] = \"\".concat(supports);\n        } else {\n          item[1] = \"@supports (\".concat(item[4], \") {\").concat(item[1], \"}\");\n          item[4] = supports;\n        }\n      }\n      list.push(item);\n    }\n  };\n  return list;\n};\n\n//# sourceURL=webpack://y/./node_modules/css-loader/dist/runtime/api.js?");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    options = {};\n  }\n  if (!url) {\n    return url;\n  }\n  url = String(url.__esModule ? url.default : url);\n\n  // If url is already wrapped in quotes, remove them\n  if (/^['\"].*['\"]$/.test(url)) {\n    url = url.slice(1, -1);\n  }\n  if (options.hash) {\n    url += options.hash;\n  }\n\n  // Should url be wrapped?\n  // See https://drafts.csswg.org/css-values-3/#urls\n  if (/[\"'() \\t\\n]|(%20)/.test(url) || options.needQuotes) {\n    return \"\\\"\".concat(url.replace(/\"/g, '\\\\\"').replace(/\\n/g, \"\\\\n\"), \"\\\"\");\n  }\n  return url;\n};\n\n//# sourceURL=webpack://y/./node_modules/css-loader/dist/runtime/getUrl.js?");
 
 /***/ }),
 
@@ -136,7 +146,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage */ \"./src/homepage.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\nconsole.log(\"Webpack is working.\");\nfunction clearContent() {\n  const content = document.getElementById(\"content\");\n  content.innerHTML = \"\";\n}\nfunction loadHome() {\n  clearContent();\n  (0,_homepage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\nfunction loadContact() {\n  clearContent();\n  (0,_contact__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n}\nfunction loadMenu() {\n  clearContent();\n  (0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n}\nfunction setUpEventListeners() {\n  document\n    .querySelector(\"button:nth-child(1)\")\n    .addEventListener(\"click\", loadHome);\n  document\n    .querySelector(\"button:nth-child(2)\")\n    .addEventListener(\"click\", loadMenu);\n  document\n    .querySelector(\"button:nth-child(3)\")\n    .addEventListener(\"click\", loadContact);\n}\nsetUpEventListeners();\nfunction initialize() {\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    setUpEventListeners();\n    loadHome();\n  });\n}\ninitialize();\n\n\n//# sourceURL=webpack://y/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _homepage__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./homepage */ \"./src/homepage.js\");\n/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./contact */ \"./src/contact.js\");\n/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./menu */ \"./src/menu.js\");\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n\n\nfunction clearContent() {\n  const content = document.getElementById(\"content\");\n  content.innerHTML = \"\";\n}\nfunction loadHome() {\n  clearContent();\n  (0,_homepage__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n}\nfunction loadContact() {\n  clearContent();\n  (0,_contact__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n}\nfunction loadMenu() {\n  clearContent();\n  (0,_menu__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\n}\nfunction setUpEventListeners() {\n  document\n    .querySelector(\"button:nth-child(1)\")\n    .addEventListener(\"click\", loadHome);\n  document\n    .querySelector(\"button:nth-child(2)\")\n    .addEventListener(\"click\", loadMenu);\n  document\n    .querySelector(\"button:nth-child(3)\")\n    .addEventListener(\"click\", loadContact);\n}\nsetUpEventListeners();\nfunction initialize() {\n  document.addEventListener(\"DOMContentLoaded\", () => {\n    setUpEventListeners();\n    loadHome();\n  });\n}\ninitialize();\n\n\n//# sourceURL=webpack://y/./src/index.js?");
 
 /***/ }),
 
@@ -147,6 +157,26 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hom
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ createMenu)\n/* harmony export */ });\nfunction createMenu() {\n  const content = document.getElementById(\"content\");\n  content.style.textAlign = \"center\";\n  content.style.backgroundImage = \"url('../src/images/Backgroundpattern.png')\";\n  content.style.backgroundImage = \"cover\"\n\n  const heading = document.createElement(\"h1\");\n  heading.textContent = \"Remy's: A Culinary Adventure\";\n  heading.style.marginTop = \"20px\";\n  content.appendChild(heading);\n\n  const menuContainer = document.createElement(\"div\");\n  menuContainer.classList.add(\"menu-container\");\n  content.appendChild(menuContainer);\n\n  const sections = [\n    { id: \"appetizers\", title: \"Appetizers\" },\n    { id: \"main-courses\", title: \"Main Courses\" },\n    { id: \"sides\", title: \"Sides\" },\n    { id: \"desserts\", title: \"Desserts\" },\n  ];\n\n  sections.forEach((section) => {\n    const sectionTitle = document.createElement(\"h2\");\n    sectionTitle.textContent = section.title;\n    sectionTitle.style.fontFamily = \"Georgia, serif\";\n    sectionTitle.style.marginTop = \"30px\";\n    menuContainer.appendChild(sectionTitle);\n\n    const sectionDiv = document.createElement(\"div\");\n    sectionDiv.id = section.id;\n    menuContainer.appendChild(sectionDiv);\n  });\n  const menuItems = [\n    {\n      name: \"Remy's Ratatouille\",\n      description:\n        \"A classic Provençal dish featuring a medley of roasted summer vegetables, slow-cooked to perfection.\",\n      image: \"../src/images/Ratatouille.jpg\",\n      section: \"appetizers\",\n    },\n    {\n      name: \"Linguini with White Truffles\",\n      description:\n        \"Delicate pasta tossed with a rich truffle cream sauce, a nod to Remy's love for fine dining.\",\n      image: \"../src/images/linguini.jpeg\",\n      section: \"appetizers\",\n    },\n    {\n      name: \"Escargot Bourguignonne\",\n      description:\n        \"A French classic, these tender snails are bathed in a garlic and herb butter sauce.\",\n      image: \"../src/images/Escargot Bourguignonne.jpg\",\n      section: \"appetizers\",\n    },\n    {\n      name: \"Le Chef's Surprise\",\n      description:\n        \"A daily changing special inspired by the freshest ingredients, showcasing the chef's creativity.\",\n      image: \"../src/images/Almas caviar.jpg\",\n      section: \"main-courses\",\n    },\n    {\n      name: \"Confit de Canard\",\n      description:\n        \"Crispy duck leg served with a sweet and tangy orange sauce, a nod to French culinary tradition.\",\n      image: \"../src/images/Confit de Canard.jpg\",\n      section: \"main-courses\",\n    },\n    {\n      name: \"Roasted Lamb with Herbs de Provence\",\n      description:\n        \"Tender lamb slow-roasted with aromatic herbs, a true taste of the French countryside.\",\n      image: \"../src/images/Roasted Lamb with Herbs de Provence.jpg\",\n      section: \"main-courses\",\n    },\n    {\n      name: \"Pommes Frites\",\n      description:\n        \"Classic French fries, crispy on the outside, fluffy on the inside.\",\n      image: \"../src/images/Pommes Frites.jpg\",\n      section: \"sides\",\n    },\n    {\n      name: \"Ratatouille Gratin\",\n      description:\n        \"A hearty baked version of the classic dish, topped with a golden cheese crust.\",\n      image: \"../src/images/Ratatouille Gratin.jpg\",\n      section: \"sides\",\n    },\n    {\n      name: \"Green Beans Almondine\",\n      description:\n        \"A simple yet elegant side dish, featuring fresh green beans with toasted almonds.\",\n      image: \"../src/images/Green Beans Almondine.jpg\",\n      section: \"sides\",\n    },\n    {\n      name: \"Tarte Tatin\",\n      description:\n        \"A caramelized upside-down apple tart, a French dessert classic.\",\n      image: \"../src/images/Tarte Tatin.jpg\",\n      section: \"desserts\",\n    },\n    {\n      name: \"Crème Brûlée\",\n      description: \"A rich custard topped with a caramelized sugar crust.\",\n      image: \"../src/images//Crème Brûlée.jpg\",\n      section: \"desserts\",\n    },\n    {\n      name: \"Chocolate Soufflé\",\n      description:\n        \"A decadent dessert, light and airy with a molten chocolate center.\",\n      image: \"../src/images/Chocolate Soufflé.jpg\",\n      section: \"desserts\",\n    },\n  ];\n  menuItems.forEach((item) => {\n    Menu(item.name, item.description, item.image, item.section);\n  });\n  function Menu(name, description, image, menuSectionId) {\n    const menuItem = document.createElement(\"div\");\n    menuItem.classList.add(\"menu-item\");\n    menuItem.style.marginBottom = \"20px\";\n    menuItem.style.position = \"relative\";\n    menuItem.style.overflow = \"hidden\";\n\n    const imageElement = document.createElement(\"img\");\n    imageElement.src = image;\n    imageElement.alt = name;\n    imageElement.style.width = \"50%\";\n    imageElement.style.height = \"400px\";\n    imageElement.style.objectFit = \"cover\";\n    imageElement.style.borderRadius = \"10px\";\n    imageElement.style.transition = \"transform 0.3s ease-in-out\";\n    menuItem.appendChild(imageElement);\n\n    const descriptionElement = document.createElement(\"div\");\n    descriptionElement.textContent = description;\n    descriptionElement.style.position = \"absolute\";\n    descriptionElement.style.bottom = \"10%\";\n    descriptionElement.style.left = \"25%\";\n    descriptionElement.style.width = \"calc(50% - 20px)\";\n    descriptionElement.style.padding = \"10px\";\n    descriptionElement.style.backgroundColor = \"rgba(0, 0, 0, 0.6)\";\n    descriptionElement.style.color = \"white\";\n    descriptionElement.style.fontSize = \"14px\";\n    descriptionElement.style.borderRadius = \"10px\";\n    descriptionElement.style.opacity = \"0\"; // Start with hidden description\n    descriptionElement.style.transition = \"opacity 0.3s ease-in-out\"; // Transition effect\n\n    menuItem.appendChild(descriptionElement);\n\n    menuItem.addEventListener(\"mouseover\", () => {\n      imageElement.style.transform = \"scale(1.05)\";\n      descriptionElement.style.opacity = \"1\"; // Show description on hover\n    });\n\n    menuItem.addEventListener(\"mouseout\", () => {\n      imageElement.style.transform = \"scale(1)\";\n      descriptionElement.style.opacity = \"0\"; // Hide description when not hovering\n    });\n\n    const menuSection = document.getElementById(menuSectionId);\n    menuSection.appendChild(menuItem);\n  }\n}\n\n\n//# sourceURL=webpack://y/./src/menu.js?");
+
+/***/ }),
+
+/***/ "./src/Fonts/HermeneusOne-Regular.otf":
+/*!********************************************!*\
+  !*** ./src/Fonts/HermeneusOne-Regular.otf ***!
+  \********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"02666af38bab89092fbc.otf\";\n\n//# sourceURL=webpack://y/./src/Fonts/HermeneusOne-Regular.otf?");
+
+/***/ }),
+
+/***/ "./src/Fonts/Lemon.ttf":
+/*!*****************************!*\
+  !*** ./src/Fonts/Lemon.ttf ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("module.exports = __webpack_require__.p + \"388ce7e72e1277b306d5.ttf\";\n\n//# sourceURL=webpack://y/./src/Fonts/Lemon.ttf?");
 
 /***/ })
 
@@ -176,6 +206,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -201,6 +234,18 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -215,6 +260,55 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && (!scriptUrl || !/^http(s?):/.test(scriptUrl))) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
