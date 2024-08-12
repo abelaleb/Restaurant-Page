@@ -1,6 +1,7 @@
 import createHomepage from "./homepage";
 import createContact from "./contact";
 import createMenu from "./menu";
+import './style.css';
 console.log("Webpack is working.");
 function clearContent() {
   const content = document.getElementById("content");
