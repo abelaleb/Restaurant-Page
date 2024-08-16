@@ -20,20 +20,27 @@
   --shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 @font-face {
-  font-family: "Title";
+  font-family: "HermeneusOne";
   src: url("./Fonts/HermeneusOne-Regular.otf");
 }
 @font-face {
-  font-family: "body";
+  font-family: "Lemon";
   src: url("./Fonts/Lemon.ttf");
 }
+@font-face {
+  font-family: "Lora";
+  src: url("./Fonts/Lora-VariableFont_wght.ttf");
+}
+@font-face {
+  font-family: Playfair;
+  src: url("./Fonts/PlayfairDisplay-VariableFont_wght.ttf");
+}
 body {
-  font-family: "body";
+  font-family: "Lora";
   display: grid;
-  flex-direction: column;
 }
 nav {
-  font-family: "Title";
+  font-family: "Playfair";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,7 +65,7 @@ button {
   color: var(--clr-6);
   cursor: pointer;
   display: inline-block;
-  font-family: "body";
+  font-family: "Playfair";
   font-size: 1.3rem;
   height: 2rem;
   padding: 0 25px;
